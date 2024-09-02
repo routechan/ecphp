@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 共通 */
+body {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+#header {
+  color: #FFF;
+  height: 60px;
+  background-color: #131921;
+}
+
+.header__item {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+/* 商品一覧 */
+.item {
+  width: 20%;
+  border: 2px solid #F7F7F7;
+}
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.item img {
+  width: 100%;
+}
+.item__flex {
+  display: flex;
+  flex-direction: column;
+}
+.item__flex p {
+  display: inline-block;
+}
+.item__flex button {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,2 @@
+body{width:100%}img{max-width:100%}.wrapper{max-width:960px;margin:0 auto}#header{color:#fff;height:60px;background-color:#131921}.header__item{display:flex;justify-content:space-between;height:60px;align-items:center}.item{width:22%;border:2px solid #f7f7f7}.item-list{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}.item img{width:250px;height:250px;-o-object-fit:cover;object-fit:cover}.item__flex{display:flex;flex-direction:column}.item__flex p{display:inline-block}.item__flex button{display:inline-block}
+/*# sourceMappingURL=style.min.css.map */
