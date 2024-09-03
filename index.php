@@ -57,7 +57,6 @@ $stt->execute();
 </div>
         </li>
     </ul>
-    <p>git commit --amen</p>
 </div>
         </main>
     
