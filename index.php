@@ -56,8 +56,6 @@ $stt->execute();
    </div>
 </div>
         </li>
- <?php };?>
-       developブランチで追記
     </ul>
 </div>
         </main>
