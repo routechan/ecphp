@@ -1,21 +1,31 @@
 /* 共通 */
+html{
+    font-size: 20px;
+}
 body{
     width:100%;
+    margin-top: 100px;
 }
 img{
     max-width:100%;
 }
 .wrapper{
-  
-    max-width:960px;
+    padding: 0 2%;
+    max-width:1040px;
     margin:0 auto;
 }
 
 /* ヘッダー */
 #header{
+    z-index: 10;
+    margin-bottom: 100px;
     color:#FFF;
 height:60px;
+width: 100%;
 background-color:#131921;
+position: fixed;
+top:0;
+left:0;
 }
 
 .header__item{
@@ -29,8 +39,8 @@ background-color:#131921;
 
 .item{
     
-    width:22%;
-        
+    width:23%;
+       
       border:2px solid #F7F7F7;
 &-list{
     display:flex;
@@ -42,15 +52,89 @@ background-color:#131921;
 width: 250px;
 height:250px;
 object-fit:cover;
+
+     }
+     &__info{
+        padding: 2%;
      }
      &__flex{
 display: flex;
-flex-direction: column;
+align-items: center;
+justify-content: space-between;
+
 p{
     display:inline-block;
 }
-button{
-    display:inline-block;
-}
+
      }
+    
+}
+.form{
+
+    &__btn{
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 7px;
+        border-radius: 30px;
+background-color: #F3A847;
+transition: 1s;
+&:hover{
+    transform:scale(1.05) 
+    ;
+}
+    }
+ }
+ 
+
+//  カート
+#cart{
+    
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:78%;
+
+    &__card{
+        padding: 2%;
+        border-top:2px solid #F7F7F7;
+        border-bottom:2px solid #F7F7F7;
+display: flex;
+gap:20px;
+
+&-image{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;   
+}
+&-info{
+   
+    
+}
+&-name{
+    font-size: 1.4rem;
+}
+&-price{
+    font-size:1.1rem;
+    margin-top: 5px;
+}
+&-delete{
+    margin-top: 40px;
+}
+
+    }
+}
+.side{
+    position: sticky;
+    top:100px;
+    right: 0;
+    width:20%;
+    height: 200px;
+    padding: 2%;
+    border-top:2px solid #F7F7F7;
+        border-bottom:2px solid #F7F7F7;
 }

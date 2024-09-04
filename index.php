@@ -42,24 +42,44 @@ $stt->execute();
             <div class="image-outer">
 <img src="image/<?=$product['image']?>">
             </div>
-<div>
+
+<!-- アイテムの情報 -->
+<div class="item__info">
    <p><?=$product['name'];?></p>
-   <p><?=$product['review'];?></p> 
+   <!-- 評価の数字を星に変換 -->
+   <p class="item__info-review"><?php switch($product['review']){
+    case 1:
+        print '☆☆☆☆★';
+        break;
+    case 2:
+        print '☆☆☆★★';
+        break;
+        case 3:
+            print '☆☆★★★';
+            break;
+            case 4:
+                print '☆★★★★';
+                break;
+                case 5;
+                print'★★★★★';
+                break;
+   };?></p> 
    <div class="item__flex">
    <p>¥<?=$product['price'];?></p>
-   <form method="post" action="into_cart.php">
+   <form class="form" method="post" action="into_cart.php">
     <!-- product['id']とuser_idをhiddenでinto_cart.phpに送る -->
-    <input type="hidden" name="product_id" value="<?=$product['id']?>">
-    <input type="hidden" name="user_id" value="<?=$user_id;?>">
-   <input type="submit" value="カートに入れる">
+    <input class="form__product-id" type="hidden" name="product_id" value="<?=$product['id']?>">
+    <input class="form__user-id" type="hidden" name="user_id" value="<?=$user_id;?>">
+   <button class="form__btn" name="send" type="submit">カートに入れる</button>
    </form>
    </div>
 </div>
+<?php }?>
         </li>
     </ul>
 </div>
         </main>
-    
+<!-- <script src="js/main.js"></script> -->
 </body>
 </html>
 
